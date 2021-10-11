@@ -12,9 +12,8 @@ public class Main {
 
     public static void main(String[] args) throws URISyntaxException {
         //escolhendo o arquivo a ser codificado
-        // Path caminho = Paths.get(ClassLoader.getSystemResource("Sandy_Com-Voce-sempre.mp3").toURI());
-        //Path caminho = Paths.get(ClassLoader.getSystemResource("C209l2.png").toURI());
-        Path caminho = Paths.get(ClassLoader.getSystemResource("Sandy-e-Junior.jpg").toURI());
+        Path caminho = Paths.get(ClassLoader.getSystemResource("Sandy_Com-Voce-sempre.mp3").toURI());
+
 
         //codificado arquivo para base64
         String encodingsString = encodeFileToBase64Binary(caminho);
@@ -61,9 +60,7 @@ public class Main {
             byte imageByte[] = Base64.getDecoder().decode(encodedfile);
 
             // escolhendo local para salvar a String decodificada e nome do arquivo
-            //FileOutputStream outputStream = new FileOutputStream("d:/tmp.mp3");
-            FileOutputStream outputStream = new FileOutputStream("d:/tmp.jpg");
-            //FileOutputStream outputStream = new FileOutputStream("d:/tmp.png");
+            FileOutputStream outputStream = new FileOutputStream("src/main/resources/tmp.mp3");
 
             //escreve o arquivo
             outputStream.write(imageByte);
