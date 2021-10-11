@@ -24,9 +24,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Para clonar o repositório em algum lugar na sua máquina, basta utilizar o comando abaixo:
 ```bash
 $ git clone https://github.com/franlaranjo/C209_TrabalhoCodDecode.git
-```
+``
 
-## Exemplos
+## 🛠 Exemplos
 Execute cada um dos exemplos, individualmente, para visualizar o código em Base64 e valide sua decodificação no diretório (src/main/resources)
 
 Caso queira validar a codificação e a decodificação, utilize o site [Base64Guru](https://base64.guru/).
